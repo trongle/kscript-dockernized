@@ -12,8 +12,6 @@ RUN curl -s "https://get.sdkman.io" | bash && \
     sdk install kotlin && \
     sdk install kscript
 
-COPY ./libs /app/
-
 WORKDIR /app
 
 ENTRYPOINT source /root/.sdkman/bin/sdkman-init.sh && /usr/bin/env kscript "$0" "$@"
