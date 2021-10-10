@@ -8,7 +8,7 @@ Run `docker build -t kscript-openjdk8 .` fom the root of the source code. In thi
 - For inline function: `docker run -i --rm kscript-openjdk8 'println("Hello Kotlin")'`.
 - For a ***.kts** scripts: `docker run -i --rm kscript-openjdk8 script.kts`.
 
-Note: 
+Notes: 
 - `-i` is `docker run` option stands for interaction which is used in this case for accept input (println("Hello Kotlin") is an input) into container.
 - `--rm` is `docker run` option which mean remove container after done run it.
       
