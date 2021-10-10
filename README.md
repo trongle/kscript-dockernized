@@ -12,7 +12,7 @@ Note:
 - `-i` is `docker run` option stands for interaction which used in this case for accept input (println("Hello Kotlin") is an input) into container.
 - `--rm` is `docker run` option which mean remove container after done run it.
       
-Some `docker run` options will help in case you want to run it more effectily: 
+Some `docker run` options will help in case you want to run it more effectively: 
 - `-v [MOUNT]:[PATH_TO_CONTAINER_DIRECTORY]`: bind a mount with [MOUNT] name to the [PATH_TO_CONTAINER_DIRECTORY]. Useful for cache kscript compiled dependencies.
 - `-v [PATH_TO_SOURCE_CODE]:[PATH_TO_CONTAINER_DIRECTORY]`: set [PATH_TO_CONTAINER_DIRECTORY] sync with [PATH_TO_CONTAINER_DIRECTORY] so change from your source code on the host system can sync with docker container.
 - `--end-file`: set a environment file. Useful when you want docker container read some environment specific environment's variables like database conection... .
