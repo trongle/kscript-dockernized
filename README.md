@@ -23,5 +23,5 @@ The source code includes a shell script **kscript** which run an already built i
 You can run (from the source code's root): `./kscript your-script.kts`.
 
 # Credits
-- [Kscript](https://github.com/holgerbrandl/kscript#embed-kscript-installer-within-your-script)
+- [Kscript](https://github.com/holgerbrandl/kscript)
 - [Docker](https://docker.com)
