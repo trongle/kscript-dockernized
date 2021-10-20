@@ -2,4 +2,4 @@
 
 envFile="$(pwd)/.env"
 
-docker run -i --rm -v kscript:/root/.m2 -v kscript:/root/.kscript -v "$(pwd):/app" --env-file "$envFile" tronglehs/kscript-openjdk8 "$1" "$@"
+docker run -i --rm -v kscript:/root/.m2 -v kscript:/root/.kscript -v "$(pwd):/app" --env-file "$envFile" tronglehs/kscript-openjdk8 "$@"
