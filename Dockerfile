@@ -10,7 +10,8 @@ RUN apt update && \
 RUN curl -s "https://get.sdkman.io" | bash && \
     source "$HOME/.sdkman/bin/sdkman-init.sh" && \
     sdk install kotlin && \
-    sdk install kscript
+    sdk install kscript \
+    sdk install gradle 6.7
 
 WORKDIR /app
 
