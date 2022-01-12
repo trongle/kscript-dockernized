@@ -15,7 +15,7 @@ Notes:
 Some `docker run`'s options will help in case you want to run it more effectively: 
 - `-v [MOUNT]:[PATH_TO_CONTAINER_DIRECTORY]`: bind a mount with [MOUNT] name to the [PATH_TO_CONTAINER_DIRECTORY]. Useful for cache kscript compiled dependencies.
 - `-v [PATH_TO_SOURCE_CODE]:[PATH_TO_CONTAINER_DIRECTORY]`: set [PATH_TO_CONTAINER_DIRECTORY] sync with [PATH_TO_CONTAINER_DIRECTORY] so changes from your source code on the host system can sync with docker container.
-- `--end-file`: read an environment file. Useful when you want docker container reads some specific environment's variables like database conection... .
+- `--env-file`: read an environment file. Useful when you want docker container reads some specific environment's variables like database conection... .
 
 The source code includes a shell script **kscript** which run an already built image **tronglehs/kscript-openjdk8** using this source code Dockerfile. The script comes with: 
 - `docker run`'s options in order to cache kscript's compiled dependencies (which are sit on /root/.m2, /root/.kscript by default), and sync the files between host system and docker container.
